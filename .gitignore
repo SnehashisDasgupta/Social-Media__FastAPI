@@ -1,0 +1,4 @@
+__pycache__
+social-env/
+.env
+directSQL.py
