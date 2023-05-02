@@ -1,10 +1,12 @@
 from fastapi import FastAPI
-from . import models
-from .database import engine
 from .routers import post, user, auth, likes
 from .config import settings
 
-models.Base.metadata.create_all(bind=engine)
+print(settings.database_username)
+
+# from . import models
+# from .database import engine
+# models.Base.metadata.create_all(bind=engine)
 
 app= FastAPI()
 
